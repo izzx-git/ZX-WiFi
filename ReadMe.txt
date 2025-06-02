@@ -37,11 +37,47 @@ ZX Evolution (уже есть такой порт).
 Софт:
 AY232K (копирование данных ZX - сервер PC)
 Moon Rabbit (gopher браузер)
+MRF (форк Moon Rabbit)
 Network Manager (Netman, настройка на точку доступа)
 NetTime (синхронизация часов SMUC через инет)
 Melon (терминал)
 PlatoTerm (терминал)
 другой софт для порта Кондратьева. Подробнее на форуме.
+
+Софт для Evolution и в NedoOS:
+(Пишу по памяти)
+Почтавить перемычку на порт EE.
+Поправить на этот порт файл \ini\espcom.ini:
+0xF8EE
+0xF9EE
+0xFAEE
+0xFBEE
+0xFCEE
+0xFDEE
+0xFEEE
+0xFFEE
+1
+0
+32
+
+Запускать приложения:
+cuart (обновление прошивки лучше не запускать)
+getpic (после запуска нажать d)
+gopher (после запуска нажать i)
+mrfue[EE].com (специальный выпуск)
+radio e
+time2 -e
+updater e (или E для полного обновления)
+
+
+Софт для Scorpion GMX OS (OSZ):
+artview
+moonr
+radio
+terminal
+update
+
+
 
 Размеры и параметры производства:
 Версии до 1.4:
