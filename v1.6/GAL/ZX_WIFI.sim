@@ -8,7 +8,7 @@ PIN   8 =  A5
 PIN   7 =  A6 
 PIN   6 =  A7 
 PIN  19 = !CS 
-PIN  18 = !IORGE 
+PIN  18 =  IORGE 
 PIN  16 = !IORQ 
 PIN  17 =  LED 
 PIN  13 = !M1 
@@ -24,7 +24,10 @@ CS =>
     A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & !IORQ & M1
 
 IORGE.oe  =>
-    A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & M1
+    A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & !IORQ & M1
+
+LED =>
+    A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & !IORQ & M1
 
 PortAddress =>
     A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7
@@ -34,6 +37,9 @@ CS.oe  =>
 
 IORQ.oe  =>
     0 
+
+LED.oe  =>
+    1 
 
 M1.oe  =>
     0 

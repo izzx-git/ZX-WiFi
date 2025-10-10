@@ -1,11 +1,11 @@
-{COMPONENT C:\USERS\ADMIN\DOWNLOADS\ZX\DEVICES\WIFI\ZX WIFI\яуелю\V1.6 ме опнбепем\GAL\ZXWIFI.SYM
+{COMPONENT C:\WINCUPL\WINCUPL\ZX_WIFI.SYM
 
  {ENVIRONMENT
   {PDIFvrev 3.00}
   {Program "CUPL(WM) Version 5.0a"}
   {DBtype "Schematic"}
   {DBvrev 1.01}
-  {DBtime "Tue Sep 30 13:48:07 2025 "}
+  {DBtime "Fri Oct 10 12:42:23 2025 "}
   {DBunit "MIL"}
   {DBgrid 10}
   {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
@@ -33,29 +33,28 @@
  {SYMBOL
   {PIN_DEF
    [Ly "PINCON"]
-   {P A0 {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
-   {P A1 {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
-   {P A2 {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
-   {P A3 {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
-   {P A7 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
-   {P A6 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
-   {P A5 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
-   {P A4 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
-   {P M1' {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
-   {P IORQ' {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
-   {P LED {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
-   {P IORGE' {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
-   {P CS' {Pt "I/O"}{Lq 0}{Ploc 280 20}}
+   {P A0 {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P A1 {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P A2 {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P A3 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P A7 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P A6 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P A5 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P A4 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P M1' {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P IORQ' {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P IORGE {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P LED {Pt "I/O"}{Lq 0}{Ploc 280 20}}
+   {P CS' {Pt "I/O"}{Lq 0}{Ploc 280 40}}
   }
 
   {PKG
    [Ly "REFDES"]
    [Ts 25][Tj "CB"][Tr 0][Tm "N"]
-   {Rdl 190 270}
+   {Rdl 190 250}
 
    [Ly "PINNUM"]
    [Ts 15][Tj "RC"]
-   {Pnl 120 250}
    {Pnl 120 230}
    {Pnl 120 210}
    {Pnl 120 190}
@@ -69,15 +68,15 @@
    {Pnl 120 30}
    [Ts 15][Tj "LC"]
    {Pnl 260 30}
+   {Pnl 260 50}
 
-   {Sd A 2 3 4 5 6 7 8 9 13 16 17 18 19}
+   {Sd A 2 3 4 5 6 7 8 9 13 16 18 17 19}
   }
 
   {PIC
    [Ly "GATE"]
    [Ts 15][Tj "LC"][Tr 0][Tm "N"]
-   {R 130 260 250 0}
-   {L 130 240 100 240}
+   {R 130 240 250 0}
    {L 130 220 100 220}
    {L 130 200 100 200}
    {L 130 180 100 180}
@@ -85,31 +84,31 @@
    {L 130 140 100 140}
    {L 130 120 100 120}
    {L 130 100 100 100}
-   {L 120 80 100 80}
-   {C 125 80 5}
+   {L 130 80 100 80}
    {L 120 60 100 60}
    {C 125 60 5}
-   {L 130 40 100 40}
-   {L 120 20 100 20}
-   {C 125 20 5}
-   {C 255 20 5}
-   {L 260 20 280 20}
+   {L 120 40 100 40}
+   {C 125 40 5}
+   {L 130 20 100 20}
+   {L 250 20 280 20}
+   {C 255 40 5}
+   {L 260 40 280 40}
    [Ly "PINNAM"]
    [Tj "LC"]
-   {T "A0" 140 240}
-   {T "A1" 140 220}
-   {T "A2" 140 200}
-   {T "A3" 140 180}
-   {T "A7" 140 160}
-   {T "A6" 140 140}
-   {T "A5" 140 120}
-   {T "A4" 140 100}
-   {T "M1'" 140 80}
-   {T "IORQ'" 140 60}
-   {T "LED" 140 40}
-   {T "IORGE'" 140 20}
+   {T "A0" 140 220}
+   {T "A1" 140 200}
+   {T "A2" 140 180}
+   {T "A3" 140 160}
+   {T "A7" 140 140}
+   {T "A6" 140 120}
+   {T "A5" 140 100}
+   {T "A4" 140 80}
+   {T "M1'" 140 60}
+   {T "IORQ'" 140 40}
+   {T "IORGE" 140 20}
    [Tj "RC"]
-   {T "CS'" 240 20}
+   {T "LED" 240 20}
+   {T "CS'" 240 40}
    [Ly "DEVICE"]
    [Tj "CT"]
    {T "G16V8MA" 190 -10}
@@ -123,7 +122,7 @@
    {EX
     [Ly "ATTR2"]
     [Ts 12][Tj "CT"][Tr 0][Tm "N"]
-    {At PLD C:\USERS\ADMIN\DOWNLOADS\ZX\DEVICES\WIFI\ZX WIFI\яуелю\V1.6 ме опнбепем\GAL\ZXWIFI 190 260}
+    {At PLD C:\WINCUPL\WINCUPL\ZX_WIFI 190 240}
    }
   }
  }
@@ -153,9 +152,9 @@
    }
    {N IORQ'
    }
-   {N LED
+   {N IORGE
    }
-   {N IORGE'
+   {N LED
    }
    {N CS'
    }
