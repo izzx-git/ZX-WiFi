@@ -1,0 +1,53 @@
+%SIGNAL
+PIN   2 =  A0 
+PIN   3 =  A1 
+PIN   4 =  A2 
+PIN   5 =  A3 
+PIN   9 =  A4 
+PIN   8 =  A5 
+PIN   7 =  A6 
+PIN   6 =  A7 
+PIN  19 = !CS 
+PIN  18 =  IORGE 
+PIN  16 = !IORQ 
+PIN  17 =  LED 
+PIN  13 = !M1 
+PIN  12 = !MREQ 
+%END
+
+%FIELD
+FIELD ADDRESS = A7,A6,A5,A4,A3,A2,A1,A0
+%END
+
+%EQUATION
+CS =>
+    !A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & !IORQ & M1
+
+IORGE.oe  =>
+    !A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & M1
+
+LED =>
+    !A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & !IORQ & M1
+
+PortAddress =>
+    !A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7
+
+SelectGE =>
+    !A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & !M1
+
+SelectPort =>
+    !A0 & A1 & A2 & A3 & !A4 & A5 & A6 & A7 & IORQ & !M1
+
+CS.oe  =>
+    1 
+
+IORQ.oe  =>
+    0 
+
+LED.oe  =>
+    1 
+
+M1.oe  =>
+    0 
+
+%END
